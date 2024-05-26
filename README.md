@@ -38,3 +38,15 @@ Replace `<prefix>` with the desired prefix for the Bitcoin address.
 1. Address Generation: Uses Python with pycryptodome to compute the RIPEMD-160 hash, compute the SHA-256 hash, add the network byte, compute the checksum, and encode the result in base58 to produce the Bitcoin address.
 1. Prefix Matching Loop with Progress Bar: Continuously generates keys, updates the progress bar, and checks if the address starts with the specified prefix. If it finds a match, it stops the progress bar and outputs the relevant keys.
 1. Package Installation: Checks if the required Python packages are installed and installs them if necessary, suppressing the verbose output to keep it clean.
+
+## Example
+```bash
+./generate_address.sh a
+```
+Output:
+```
+Found address: 1aQ1o61eKUSMJgwoG5zBYjoqFt2jC96eE
+Private key: fba5f58959d8a72ff62008eee395daf7c83d30cad6bc04e76ba31e11c331f507
+Private key (WIF): 5Kj7bhMSgv6C3jJ3Co71ozrq3DTm3LrDKidh15kRhhMGCxFCwLq
+Public key: 04794b8ae5b21137e048717ea68a9a99ae6351d53d9cda434d39405bf7e13d290d96e779ad91c74e5ff28c3ac2754614ee7504f7c09d5d815a8206fa8d7c595fb7
+```
