@@ -118,6 +118,7 @@ while True:
         print(f'\nFound address: {address}')
         print(f'Private key: {private_key}')
         print(f'Private key (WIF): {private_key_wif}')
+        print(f'Public key: {public_key}')
         break
 END
 }
